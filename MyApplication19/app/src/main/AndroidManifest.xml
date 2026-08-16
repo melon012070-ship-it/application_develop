@@ -41,7 +41,7 @@
             </intent-filter>
         </activity>
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDTJvgN9oRl1chUW9RWoTZWsxS52OhP9Sc"/>
+            android:value="${MAPS_API_KEY}"/>
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
     </application>
 
