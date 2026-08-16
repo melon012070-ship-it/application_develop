@@ -75,14 +75,6 @@ Google Maps SDK와 Android 위치 서비스를 활용하여 사용자의 현재 
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 ```
 
-## 실행 화면
-
-실행 화면을 공개할 경우 `docs/images/` 폴더에 이미지를 추가할 수 있습니다.
-
-```markdown
-![현재 위치 지도 화면](docs/images/map-current-location.png)
-```
-
 스크린샷에는 API 키, Google 계정, 실제 거주지 등 민감한 정보가 포함되지 않도록 주의해야 합니다.
 
 ## 개선 방향
