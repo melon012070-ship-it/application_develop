@@ -1,0 +1,5 @@
+RAG
+Pre training / fine tunning 
+지도학습 , 비지도학습  ... 클러스터링...
+요즘 최신 ai 트렌드 
+-> ai agent vs agentic ai 

@@ -1,0 +1,1544 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0109.0333                               -->
+<workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='샘플데이터_중급' inline='true' name='federated.1wx69qy14l7nfu1bac9kq0viqqo4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='샘플데이터_중급' name='textscan.0b719fv0349m3t1493bz00l9ulez'>
+            <connection class='textscan' directory='C:/Users/melon/Downloads' filename='샘플데이터_중급.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation all='true' name='샘플데이터_중급.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='Table Names' />
+            <column datatype='date' name='기준일자' />
+            <column datatype='string' name='관내외' />
+            <column datatype='string' name='시도명' />
+            <column datatype='string' name='시군구명' />
+            <column datatype='string' name='대분류명' />
+            <column datatype='string' name='중분류명' />
+            <column datatype='string' name='성별' />
+            <column datatype='string' name='연령대' />
+            <column datatype='integer' name='주문건수' />
+            <column datatype='integer' name='매출액' />
+            <column datatype='integer' name='결제건수' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.0b719fv0349m3t1493bz00l9ulez' name='샘플데이터_중급.csv' table='[샘플데이터_중급#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+              <column datatype='string' name='Table Names' ordinal='0' />
+              <column datatype='date' name='기준일자' ordinal='1' />
+              <column datatype='string' name='관내외' ordinal='2' />
+              <column datatype='string' name='시도명' ordinal='3' />
+              <column datatype='string' name='시군구명' ordinal='4' />
+              <column datatype='string' name='대분류명' ordinal='5' />
+              <column datatype='string' name='중분류명' ordinal='6' />
+              <column datatype='string' name='성별' ordinal='7' />
+              <column datatype='string' name='연령대' ordinal='8' />
+              <column datatype='integer' name='주문건수' ordinal='9' />
+              <column datatype='integer' name='매출액' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0b719fv0349m3t1493bz00l9ulez' name='샘플데이터_중급_조인1.csv' table='[샘플데이터_중급_조인1#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+              <column datatype='string' name='Table Names' ordinal='0' />
+              <column datatype='date' name='기준일자' ordinal='1' />
+              <column datatype='string' name='관내외' ordinal='2' />
+              <column datatype='string' name='시도명' ordinal='3' />
+              <column datatype='string' name='시군구명' ordinal='4' />
+              <column datatype='string' name='대분류명' ordinal='5' />
+              <column datatype='string' name='중분류명' ordinal='6' />
+              <column datatype='string' name='성별' ordinal='7' />
+              <column datatype='string' name='연령대' ordinal='8' />
+              <column datatype='integer' name='매출액' ordinal='9' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0b719fv0349m3t1493bz00l9ulez' name='샘플데이터_중급_조인2.csv' table='[샘플데이터_중급_조인2#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+              <column datatype='integer' name='결제건수' ordinal='0' />
+              <column datatype='string' name='Table Names' ordinal='1' />
+              <column datatype='date' name='기준일자' ordinal='2' />
+              <column datatype='string' name='관내외' ordinal='3' />
+              <column datatype='string' name='시도명' ordinal='4' />
+              <column datatype='string' name='시군구명' ordinal='5' />
+              <column datatype='string' name='대분류명' ordinal='6' />
+              <column datatype='string' name='중분류명' ordinal='7' />
+              <column datatype='string' name='성별' ordinal='8' />
+              <column datatype='string' name='연령대' ordinal='9' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Names]</local-name>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias>Table Names</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>기준일자</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[기준일자]</local-name>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias>기준일자</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>관내외</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[관내외]</local-name>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias>관내외</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>시도명</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[시도명]</local-name>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias>시도명</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>시군구명</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[시군구명]</local-name>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias>시군구명</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>대분류명</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[대분류명]</local-name>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias>대분류명</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>중분류명</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[중분류명]</local-name>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias>중분류명</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>성별</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[성별]</local-name>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias>성별</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>연령대</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[연령대]</local-name>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias>연령대</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>주문건수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[주문건수]</local-name>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias>주문건수</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>매출액</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[매출액]</local-name>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias>매출액</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>결제건수</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[결제건수]</local-name>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias>결제건수</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[샘플데이터_중급.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='계산1' datatype='real' name='[Calculation_0971734183464960]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[매출액]/100000000' />
+      </column>
+      <column caption='계산2' datatype='real' name='[Calculation_0971734184787972]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[매출액]/100000000' />
+      </column>
+      <column caption='샘플데이터_중급.csv' datatype='table' name='[__tableau_internal_object_id__].[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[매출액]' role='measure' type='quantitative' />
+      <column datatype='string' name='[성별]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;F&quot;' value='여성' />
+          <alias key='&quot;M&quot;' value='남성' />
+        </aliases>
+      </column>
+      <column datatype='string' name='[시군구명]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[시도명]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[주문건수]' role='measure' type='quantitative' />
+      <column-instance column='[시군구명]' derivation='None' name='[none:시군구명:nk]' pivot='key' type='nominal' />
+      <column-instance column='[매출액]' derivation='Sum' name='[sum:매출액:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[주문건수]' derivation='Sum' name='[sum:주문건수:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='ko_KR' class='hyper' dbname='Data/Desktop/샘플데이터_중급.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='02/20/2026 05:07:06 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='샘플데이터_중급' increment-value='%null%' refresh-type='create' rows-inserted='2998010' timestamp-start='2026-02-20 05:06:46.996' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Table Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Names</remote-alias>
+              <ordinal>0</ordinal>
+              <family>샘플데이터_중급.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>기준일자</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[기준일자]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>기준일자</remote-alias>
+              <ordinal>1</ordinal>
+              <family>샘플데이터_중급.csv+</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>184</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>관내외</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[관내외]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>관내외</remote-alias>
+              <ordinal>2</ordinal>
+              <family>샘플데이터_중급.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>시도명</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[시도명]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>시도명</remote-alias>
+              <ordinal>3</ordinal>
+              <family>샘플데이터_중급.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>시군구명</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[시군구명]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>시군구명</remote-alias>
+              <ordinal>4</ordinal>
+              <family>샘플데이터_중급.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>대분류명</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[대분류명]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>대분류명</remote-alias>
+              <ordinal>5</ordinal>
+              <family>샘플데이터_중급.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>중분류명</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[중분류명]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>중분류명</remote-alias>
+              <ordinal>6</ordinal>
+              <family>샘플데이터_중급.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>성별</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[성별]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>성별</remote-alias>
+              <ordinal>7</ordinal>
+              <family>샘플데이터_중급.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>연령대</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[연령대]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>연령대</remote-alias>
+              <ordinal>8</ordinal>
+              <family>샘플데이터_중급.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>주문건수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[주문건수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>주문건수</remote-alias>
+              <ordinal>9</ordinal>
+              <family>샘플데이터_중급.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>매출액</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[매출액]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>매출액</remote-alias>
+              <ordinal>10</ordinal>
+              <family>샘플데이터_중급.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>765920</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>결제건수</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[결제건수]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>결제건수</remote-alias>
+              <ordinal>11</ordinal>
+              <family>샘플데이터_중급.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>12</ordinal>
+              <family>샘플데이터_중급.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[sum:매출액:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[usr:Calculation_0971734188883978:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[sum:주문건수:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:시군구명:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;노원구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;강남구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;용산구&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;관악구&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;중랑구&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;마포구&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;도봉구&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;광진구&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;양천구&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;강동구&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;은평구&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;성북구&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;구로구&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;서대문구&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;서초구&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;송파구&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;영등포구&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;동대문구&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;금천구&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;강북구&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;종로구&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;성동구&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;동작구&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;강서구&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;중구&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Table Names' />
+        <field-sort-custom-order field='기준일자' />
+        <field-sort-custom-order field='관내외' />
+        <field-sort-custom-order field='시도명' />
+        <field-sort-custom-order field='시군구명' />
+        <field-sort-custom-order field='대분류명' />
+        <field-sort-custom-order field='중분류명' />
+        <field-sort-custom-order field='성별' />
+        <field-sort-custom-order field='연령대' />
+        <field-sort-custom-order field='주문건수' />
+        <field-sort-custom-order field='매출액' />
+        <field-sort-custom-order field='Calculation_0971734184787972' />
+        <field-sort-custom-order field='결제건수' />
+        <field-sort-custom-order field='Table Name' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field='Calculation_0971734183464960' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='샘플데이터_중급.csv' id='샘플데이터_중급.csv_6C22736305EC4C88A6313D9D7EC2E2E2'>
+            <properties context=''>
+              <relation all='true' name='샘플데이터_중급.csv+' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='Table Names' />
+                  <column datatype='date' name='기준일자' />
+                  <column datatype='string' name='관내외' />
+                  <column datatype='string' name='시도명' />
+                  <column datatype='string' name='시군구명' />
+                  <column datatype='string' name='대분류명' />
+                  <column datatype='string' name='중분류명' />
+                  <column datatype='string' name='성별' />
+                  <column datatype='string' name='연령대' />
+                  <column datatype='integer' name='주문건수' />
+                  <column datatype='integer' name='매출액' />
+                  <column datatype='integer' name='결제건수' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='textscan.0b719fv0349m3t1493bz00l9ulez' name='샘플데이터_중급.csv' table='[샘플데이터_중급#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                    <column datatype='string' name='Table Names' ordinal='0' />
+                    <column datatype='date' name='기준일자' ordinal='1' />
+                    <column datatype='string' name='관내외' ordinal='2' />
+                    <column datatype='string' name='시도명' ordinal='3' />
+                    <column datatype='string' name='시군구명' ordinal='4' />
+                    <column datatype='string' name='대분류명' ordinal='5' />
+                    <column datatype='string' name='중분류명' ordinal='6' />
+                    <column datatype='string' name='성별' ordinal='7' />
+                    <column datatype='string' name='연령대' ordinal='8' />
+                    <column datatype='integer' name='주문건수' ordinal='9' />
+                    <column datatype='integer' name='매출액' ordinal='10' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0b719fv0349m3t1493bz00l9ulez' name='샘플데이터_중급_조인1.csv' table='[샘플데이터_중급_조인1#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                    <column datatype='string' name='Table Names' ordinal='0' />
+                    <column datatype='date' name='기준일자' ordinal='1' />
+                    <column datatype='string' name='관내외' ordinal='2' />
+                    <column datatype='string' name='시도명' ordinal='3' />
+                    <column datatype='string' name='시군구명' ordinal='4' />
+                    <column datatype='string' name='대분류명' ordinal='5' />
+                    <column datatype='string' name='중분류명' ordinal='6' />
+                    <column datatype='string' name='성별' ordinal='7' />
+                    <column datatype='string' name='연령대' ordinal='8' />
+                    <column datatype='integer' name='매출액' ordinal='9' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0b719fv0349m3t1493bz00l9ulez' name='샘플데이터_중급_조인2.csv' table='[샘플데이터_중급_조인2#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                    <column datatype='integer' name='결제건수' ordinal='0' />
+                    <column datatype='string' name='Table Names' ordinal='1' />
+                    <column datatype='date' name='기준일자' ordinal='2' />
+                    <column datatype='string' name='관내외' ordinal='3' />
+                    <column datatype='string' name='시도명' ordinal='4' />
+                    <column datatype='string' name='시군구명' ordinal='5' />
+                    <column datatype='string' name='대분류명' ordinal='6' />
+                    <column datatype='string' name='중분류명' ordinal='7' />
+                    <column datatype='string' name='성별' ordinal='8' />
+                    <column datatype='string' name='연령대' ordinal='9' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='시트 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>남성/여성 매출액</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='샘플데이터_중급' name='federated.1wx69qy14l7nfu1bac9kq0viqqo4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wx69qy14l7nfu1bac9kq0viqqo4'>
+            <column caption='SUM([매출액]/100000000)' datatype='real' name='[Calculation_0971734185615365]' role='measure' type='quantitative' user:unnamed='시트 1'>
+              <calculation class='tableau' formula='SUM([매출액]/100000000)' />
+            </column>
+            <column-instance column='[성별]' derivation='None' name='[none:성별:nk]' pivot='key' type='nominal' />
+            <column-instance column='[매출액]' derivation='Sum' name='[sum:매출액:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0971734185615365]' derivation='User' name='[usr:Calculation_0971734185615365:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[매출액]' role='measure' type='quantitative' />
+            <column datatype='string' name='[성별]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='여성' />
+                <alias key='&quot;M&quot;' value='남성' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[sum:매출액:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[usr:Calculation_0971734185615365:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[usr:Calculation_0971734185615365:qk]</run>
+                <run>&gt;억</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#499894' />
+                <format attr='size' value='1.2193922996520996' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[sum:매출액:qk]</rows>
+        <cols>[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:성별:nk]</cols>
+      </table>
+      <simple-id uuid='{19DE5F13-BED1-4DD3-A9EA-9FEE99A94A04}' />
+    </worksheet>
+    <worksheet name='시트 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>시군구 맵차트&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='샘플데이터_중급' name='federated.1wx69qy14l7nfu1bac9kq0viqqo4' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1wx69qy14l7nfu1bac9kq0viqqo4'>
+            <column-instance column='[시군구명]' derivation='None' name='[none:시군구명:nk]' pivot='key' type='nominal' />
+            <column-instance column='[매출액]' derivation='Sum' name='[sum:매출액:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[매출액]' role='measure' type='quantitative' />
+            <column datatype='string' name='[시군구명]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[Latitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[Latitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='outdoors' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]' />
+              <text column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[sum:매출액:qk]' />
+              <geometry column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='0' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.4612706899642944' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[sum:매출액:qk]</rows>
+        <cols>[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]</cols>
+      </table>
+      <simple-id uuid='{5250BAF2-AED8-4AE7-9AFA-927210F3B7BD}' />
+    </worksheet>
+    <worksheet name='시트 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>일자별 성별 매출액 라인그래프&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='샘플데이터_중급' name='federated.1wx69qy14l7nfu1bac9kq0viqqo4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wx69qy14l7nfu1bac9kq0viqqo4'>
+            <column caption='SUM([매출액]/100000000)' datatype='real' name='[Calculation_0971734188208137]' role='measure' type='quantitative' user:unnamed='시트 3'>
+              <calculation class='tableau' formula='SUM([매출액]/100000000)' />
+            </column>
+            <column-instance column='[기준일자]' derivation='MDY' name='[md:기준일자:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[성별]' derivation='None' name='[none:성별:nk]' pivot='key' type='nominal' />
+            <column-instance column='[매출액]' derivation='Sum' name='[sum:매출액:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0971734188208137]' derivation='User' name='[usr:Calculation_0971734188208137:qk]' pivot='key' type='quantitative' />
+            <column datatype='date' name='[기준일자]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[매출액]' role='measure' type='quantitative' />
+            <column datatype='string' name='[성별]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;F&quot;' value='여성' />
+                <alias key='&quot;M&quot;' value='남성' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[usr:Calculation_0971734188208137:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[sum:매출액:qk]</rows>
+        <cols>([federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:성별:nk] / [federated.1wx69qy14l7nfu1bac9kq0viqqo4].[md:기준일자:ok])</cols>
+      </table>
+      <simple-id uuid='{BB86EA35-DBB3-4A64-83EA-98CBC3225D03}' />
+    </worksheet>
+    <worksheet name='시트 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>업종대분류별 매출액 / 주문건수 콤보차트</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='샘플데이터_중급' name='federated.1wx69qy14l7nfu1bac9kq0viqqo4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wx69qy14l7nfu1bac9kq0viqqo4'>
+            <column caption='SUM([매출액]/100000000)' datatype='real' name='[Calculation_0971734188883978]' role='measure' type='quantitative' user:unnamed='시트 4'>
+              <calculation class='tableau' formula='SUM([매출액]/100000000)' />
+            </column>
+            <column-instance column='[대분류명]' derivation='None' name='[none:대분류명:nk]' pivot='key' type='nominal' />
+            <column-instance column='[매출액]' derivation='Sum' name='[sum:매출액:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[주문건수]' derivation='Sum' name='[sum:주문건수:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0971734188883978]' derivation='User' name='[usr:Calculation_0971734188883978:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[대분류명]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[매출액]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[주문건수]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[sum:주문건수:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[sum:매출액:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[:Measure Names]' />
+              <text column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[usr:Calculation_0971734188883978:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[usr:Calculation_0971734188883978:qk]</run>
+                <run>&gt;억</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[sum:주문건수:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1wx69qy14l7nfu1bac9kq0viqqo4].[sum:매출액:qk] + [federated.1wx69qy14l7nfu1bac9kq0viqqo4].[sum:주문건수:qk])</rows>
+        <cols>[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:대분류명:nk]</cols>
+      </table>
+      <simple-id uuid='{9C1FC37D-35FF-4E29-BC88-9BF5D940A1A3}' />
+    </worksheet>
+    <worksheet name='시트 5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0C201032-7F2B-4305-A310-66C5362BF16E}' />
+    </worksheet>
+    <worksheet name='시트 6'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{11E45B6C-CDE1-42B8-9C19-FF6A2D099005}' />
+    </worksheet>
+    <worksheet name='시트 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='샘플데이터_중급' name='federated.1wx69qy14l7nfu1bac9kq0viqqo4' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1wx69qy14l7nfu1bac9kq0viqqo4'>
+            <column-instance column='[시군구명]' derivation='None' name='[none:시군구명:nk]' pivot='key' type='nominal' />
+            <column-instance column='[시도명]' derivation='None' name='[none:시도명:nk]' pivot='key' type='nominal' />
+            <column-instance column='[매출액]' derivation='Sum' name='[sum:매출액:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[매출액]' role='measure' type='quantitative' />
+            <column datatype='string' name='[시군구명]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column datatype='string' name='[시도명]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[Latitude (generated)]</column>
+            <column>[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[Longitude (generated)]' field-type='quantitative' max='14184646.964352349' min='14087291.788316365' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[Latitude (generated)]' field-type='quantitative' max='4539229.6645268546' min='4491334.4563147249' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='satellite' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <text column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[sum:매출액:qk]' />
+              <text column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]' />
+              <lod column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]' />
+              <lod column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시도명:nk]' />
+              <lod column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]' />
+              <geometry column='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#499894' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[Latitude (generated)]</rows>
+        <cols>[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{A443EB21-5CCB-482B-A359-6F3CF8BACC34}' />
+    </worksheet>
+    <worksheet name='시트 8'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{81A7C3B1-F0FF-4034-BAF2-6067E4B72F96}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='대시보드 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='11' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='9' type-v2='layout-basic' w='95200' x='800' y='1000'>
+              <zone h='45875' id='3' param='horz' type-v2='layout-flow' w='95200' x='800' y='7250'>
+                <zone fixed-size='234' h='45875' id='5' is-fixed='true' name='시트 1' w='24200' x='800' y='7250'>
+                  <layout-cache minheight='195' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45875' id='7' name='시트 3' w='71000' x='25000' y='7250'>
+                  <layout-cache cell-count-w='368' non-cell-size-w='71' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='6250' id='6' type-v2='text' w='95200' x='800' y='1000'>
+                <formatted-text>
+                  <run>제목&#10;</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45875' id='8' name='시트 4' w='47600' x='48400' y='53125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='45875' id='13' name='시트 2' w='47600' x='800' y='53125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='32' h='98000' id='10' is-fixed='true' param='vert' type-v2='layout-flow' w='3200' x='96000' y='1000'>
+              <zone h='9000' id='12' name='시트 4' pane-specification-id='3' param='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[:Measure Names]' type-v2='color' w='3200' x='96000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='64125' id='14' name='시트 2' pane-specification-id='0' param='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]' type-v2='color' w='3200' x='96000' y='10000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='17' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='6250' id='6' type-v2='text' w='95200' x='800' y='1000'>
+                  <formatted-text>
+                    <run>제목&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45875' id='5' is-fixed='true' name='시트 1' w='24200' x='800' y='7250'>
+                  <layout-cache minheight='195' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45875' id='7' is-fixed='true' name='시트 3' w='71000' x='25000' y='7250'>
+                  <layout-cache cell-count-w='368' non-cell-size-w='71' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45875' id='13' is-fixed='true' name='시트 2' w='47600' x='800' y='53125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='64125' id='14' name='시트 2' pane-specification-id='0' param='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]' type-v2='color' w='3200' x='96000' y='10000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='45875' id='8' is-fixed='true' name='시트 4' w='47600' x='48400' y='53125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9000' id='12' name='시트 4' pane-specification-id='3' param='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[:Measure Names]' type-v2='color' w='3200' x='96000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5BE59A34-7C47-4FEE-9BBF-23F7E2B68264}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{70C88D07-AA13-454D-8941-C9D7C7B8B5D0}' />
+    </window>
+    <window class='dashboard' name='대시보드 1'>
+      <viewpoints>
+        <viewpoint name='시트 1' />
+        <viewpoint name='시트 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='시트 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='시트 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{70436CC7-4013-4F6A-AB5F-35C41AD0A08C}' />
+    </window>
+    <window class='worksheet' name='시트 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[none:시군구명:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EB25A103-3E61-4D50-BC86-5AACE40C0B03}' />
+    </window>
+    <window class='worksheet' name='시트 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FF43D589-C0C3-4533-9EDB-F700378CBBD0}' />
+    </window>
+    <window class='worksheet' name='시트 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.1wx69qy14l7nfu1bac9kq0viqqo4].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4CC5212F-2C25-4C92-A5AE-4D1C7CB772C4}' />
+    </window>
+    <window class='worksheet' name='시트 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9A388ABA-CCE6-4B6D-8079-2C159D337505}' />
+    </window>
+    <window class='worksheet' name='시트 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E80363B2-6CEB-469E-8FA2-D998041ABE8C}' />
+    </window>
+    <window class='worksheet' name='시트 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{29D03A0B-620D-49C2-AF02-E21C7DB804F4}' />
+    </window>
+    <window class='worksheet' maximized='true' name='시트 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='30'>
+            <card type='columns' />
+          </strip>
+          <strip size='30'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{00EF081B-7AEB-4720-BAE2-821BCC113778}' />
+    </window>
+  </windows>
+</workbook>

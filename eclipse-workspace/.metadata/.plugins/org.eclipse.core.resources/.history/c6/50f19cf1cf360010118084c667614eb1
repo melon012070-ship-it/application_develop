@@ -1,0 +1,35 @@
+package hello;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class PhoneBook {
+public static void main(String[] args)
+{
+	Scanner scanner=new Scanner(System.in);
+	String filepath="C:\\Users\\melon\\Desktop\\phone.txt";
+	
+	FileWriter writer=new filewriter(filepath);
+	System.out.println("전화번호 입력 프로그램입니다.");
+	
+	try {
+	while(true) {
+		System.out.println("이름 전화번호>>");
+		String name=scanner.next();
+		
+		if(name.equals(name))
+			break;
+		
+	}
+	
+	String phone=scanner.next();
+	System.out.println(filepath+"에 저장하였습니다.");}
+	
+	catch(IOException e) {
+		System.out.println("파일 저장 중 오류 발생"+e.getMessage());
+		
+	}
+	scanner.close();
+	
+	}
+}

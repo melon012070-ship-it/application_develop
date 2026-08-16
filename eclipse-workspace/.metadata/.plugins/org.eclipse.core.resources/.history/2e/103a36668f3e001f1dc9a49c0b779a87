@@ -1,0 +1,39 @@
+package test;
+import java.util.Scanner;
+
+public class Helloworld {
+public static void main(String[] args) {
+	
+int hour=10;
+boolean morningCoffee=false;
+
+if(hour<14&&!morningCoffee) {
+	System.out.println("Please iced americano");
+	
+}
+System.out.println("Coffee order completed");
+
+}
+}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+

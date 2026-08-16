@@ -1,0 +1,56 @@
+package test;
+
+public class Helloworld {
+public static void main(String[] args)
+{
+	/*System.out.println("java");
+	System.out.println("hello world");
+*///int a,b=5; // a에 선언만 b에 선언, 5 할당
+int radius=10;
+
+char c2='b';
+char c3='c';
+
+double weight=75.56;
+String str="Hello, World!";
+System.out.println(str);
+char c1='a';
+System.out.println(c1);
+int age=30;
+System.out.println("Age is " + age);
+
+int a=7,b=5;
+System.out.println("a+b="+(a+b));
+
+int number=12345;
+
+int ones=number%10;
+int tens=(number/10)%10;
+int hundreds=(number/100)%10;
+int thousands=(number/1000)%10;
+int tenThousands=(number/10000);
+
+System.out.println("Ones:"+ones);
+
+double result1=Math.pow(2, 3);
+double result2=Math.sqrt(16); //루트 
+
+System.out.println("2 to the power of 3 is");
+
+String x1;
+String x2;
+
+double k=b*b-4*a*c;
+if(k<0) {
+	k=-1*k;
+	x1=(b/(2*a)-Math.sqrt(k)/(2*a))+"i";
+	x2=(b/(2*a)+Math.sqrt(k)/(2*a))+"i";
+	
+}
+else {
+	x1=(b-Math.sqrt(k)/(2*a)+"");
+	x2=(b+Math.sqrt(k)/(2*a)+"");
+}
+}
+}
+
